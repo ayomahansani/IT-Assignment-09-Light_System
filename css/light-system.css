@@ -66,3 +66,20 @@ button {
 button:hover {
     background-color: #d07575;
 }
+
+/* ---------------------------------- */
+
+.lightOn_01 {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+}
+
+.lightOn_02 {
+    background-color: indianred;
+    box-shadow: 0 0 20px indianred;
+}
+
+.lightOn_03 {
+    background-color: #c78d8d;
+    box-shadow: 0 0 20px #c78d8d;
+}
