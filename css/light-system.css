@@ -16,12 +16,11 @@ main {
     left: 0;
     right: 0;
     margin: auto;
-
-    text-align: center;
 }
 
 main h1 {
     color: indianred;
+    text-align: center;
 }
 
 #light-panel {
@@ -29,4 +28,20 @@ main h1 {
     width: fit-content;
     height: fit-content;
     margin: auto;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding: 15px;
+}
+
+#btn-panel {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.light {
+    width: 100px;
+    aspect-ratio: 2/1;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 8px;
 }
