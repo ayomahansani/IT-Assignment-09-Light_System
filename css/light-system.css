@@ -24,6 +24,12 @@ main h1 {
     margin-bottom: 40px;
 }
 
+main h1:hover {
+    color: #d07575;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 #light-panel {
     display: flex;
     width: fit-content;
@@ -55,4 +61,8 @@ button {
     border: none;
     font-size: 17px;
     margin: 0 5px;
+}
+
+button:hover {
+    background-color: #d07575;
 }
