@@ -38,12 +38,12 @@ function updateLightPanel() {
     }
 }
 
-$("#startBtn").on("click", () => {
+$("#startBtn").on("click", function () {
     myInterval = setInterval(updateLightPanel, 70);
     audio.play();
 });
 
-$("#stopBtn").on("click", () => {
-    myInterval = clearInterval(myInterval);
+$("#stopBtn").on("click", function () {
+    clearInterval(myInterval);
     audio.pause();
 });
