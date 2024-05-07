@@ -38,6 +38,9 @@ function updateLightPanel() {
     }
 }
 
+
+// starting js for start and end buttons
+
 $("#startBtn").on("click", function () {
     myInterval = setInterval(updateLightPanel, 70);
     audio.play();
@@ -47,3 +50,5 @@ $("#stopBtn").on("click", function () {
     clearInterval(myInterval);
     audio.pause();
 });
+
+// ending js for start and end buttons

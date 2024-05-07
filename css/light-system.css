@@ -75,11 +75,11 @@ button:hover {
 }
 
 .lightOn_02 {
-    background-color: indianred;
-    box-shadow: 0 0 20px indianred;
+    background-color: #fc4a4a;
+    box-shadow: 0 0 20px #fc4a4a;
 }
 
 .lightOn_03 {
-    background-color: #c78d8d;
-    box-shadow: 0 0 20px #c78d8d;
+    background-color: #f89494;
+    box-shadow: 0 0 20px #f89494;
 }
