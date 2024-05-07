@@ -2,6 +2,7 @@ var current_light_index = 0;
 var max_light_count = 7;
 var move = "RIGHT"; // RIGHT or LEFT
 var myInterval = null;
+var audio = $("#audio")[0];
 
 
 function updateLightPanel() {
@@ -14,34 +15,35 @@ function updateLightPanel() {
 
     if( move === "RIGHT") {
 
-        if(current_light_index !== 0) {
-            $(".light").eq(current_light_index-1).addClass("lightOn_02");
+        if(current_light_index !== 0) $(".light").eq(current_light_index-1).addClass("lightOn_02");
+        if(current_light_index !== 0) $(".light").eq(current_light_index-2).addClass("lightOn_03");
 
             ++current_light_index;
 
-            if(current_light_index>max_light_count - 2) {
+            if(current_light_index > max_light_count - 2) {
                 move = "LEFT";
             }
-        }
 
     } else {
 
-        $(".light").eq(current_light_index+1).addClass("light_on2");
+        $(".light").eq(current_light_index+1).addClass("lightOn_02");
+        $(".light").eq(current_light_index+2).addClass("lightOn_03");
 
         --current_light_index;
 
         if(current_light_index===0) {
+            current_light_index = 2
             move = "RIGHT";
         }
     }
 }
 
 $("#startBtn").on("click", () => {
-    myInterval = setInterval(updateLightPanel, 50);
-    $("#audio")[0].play();
+    myInterval = setInterval(updateLightPanel, 70);
+    audio.play();
 });
 
 $("#stopBtn").on("click", () => {
     myInterval = clearInterval(myInterval);
-    $("#audio")[0].pause();
+    audio.pause();
 });
