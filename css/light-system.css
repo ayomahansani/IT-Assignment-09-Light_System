@@ -25,5 +25,8 @@ main h1 {
 }
 
 #light-panel {
-
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
 }
